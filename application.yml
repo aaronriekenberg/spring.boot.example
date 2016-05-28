@@ -1,0 +1,35 @@
+my.service:
+  data: new_configured_value
+
+my.configuration.properties:
+  stuff: one
+  things: two
+
+  mapAttributes:
+    moreComplicatedKeyValue:
+      value1: value1 string
+      value2: 5
+    key2:
+      value1: value2 string
+      value2: 10
+
+  listAttributes:
+    0:
+      value1: list value 0
+      value2: 14
+    1:
+      value1: list value 1
+      value2: 15
+    2:
+      value1: list value 2
+      value2: 16
+
+endpoints:
+  enabled: true
+  info.enabled: true
+  health.enabled: true
+  health.sensitive: false
+
+info:
+  build:
+    version: 1.0-SNAPSHOT
